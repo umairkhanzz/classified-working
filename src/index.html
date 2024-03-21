@@ -1,51 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Classfied</title>
     <link rel="stylesheet" href="/style/output.css">
+    <link rel="stylesheet" href="/assets/fonts/icons.css">
 </head>
+
 <body>
-    <div class="wrapper border-2 border-black ">
-        <div class="container flex justify-between items-center border-2 border-red-600 mx-auto px-2">
-            <div class="logo border-2 border-green-700">
+    <div class="wrapper">
+        <div class="xl:container flex justify-between items-center mx-auto py-4 lg:py-0 px-2">
+            <div class="logo ">
                 <img src="/assets/images/logo.png" alt="logo-image">
             </div>
             <div class="navlinks flex justify-center items-center gap-5">
-                <ul class="flex justify-center items-center">
-                    <a href="#"><li class="text-lg py-7 px-5 text-red-600 hover:border-t-2 hover:border-red-600 font-semibold">Home</li></a>
-                    <a href="#"><li class="text-lg py-7 px-5 border-2 border-blue-700 font-semibold">Listings</li></a>
-                    <a href="#"><li class="text-lg py-7 px-5 border-2 border-blue-700 font-semibold">Pages</li></a>
-                    <a href="#"><li class="text-lg py-7 px-5 border-2 border-blue-700 font-semibold">Blogs</li></a>
-                    <a href="#"><li class="text-lg py-7 px-5 border-2 border-blue-700 font-semibold">Contact</li></a>  
+                <ul class="lg:flex justify-center items-center  hidden">
+                    <a href="#">
+                        <li class="text-lg py-7 px-5 text-red-600 hover:border-t-2 hover: font-semibold">Home</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-lg py-7 px-5  font-semibold">Listings</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-lg py-7 px-5  font-semibold">Pages</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-lg py-7 px-5  font-semibold">Blogs</li>
+                    </a>
+                    <a href="#">
+                        <li class="text-lg py-7 px-5  font-semibold">Contact</li>
+                    </a>
                 </ul>
                 <div class="font-semibold px-4">
+                    <span class="icon-user"></span>
                     <a href="#">Sign in</a>
                     <span class="px-2">or</span>
                     <a href="#">Sign up</a>
                 </div>
             </div>
-            <div class="btn p-1 py-4 border-2 border-yellow-400">
+            <div class="btn hidden xl:block p-1 py-4  -400">
                 <a class="bg-black text-white font-semibold text-xl py-4 px-8 rounded-md" href="#">+ Add Listing</a>
             </div>
         </div>
     </div>
 
-    <div class="header-wrap border-2 border-black ">
-        <div class="container border-2 border-blue-800 mx-auto p-2 ">
-            <div class="show-case flex justify-between px-10 py-14">
-                <div class="left pl-12 w-[60%] p-3 border-2 border-black bg-[url('/assets/images/background.png')] bg-no-repeat">
-                    <div class="content p-4 border-2 border-yellow-400">
-                        <p class="text-3xl font-bold mb-3 text-red-700">Over 10,56,432 Active Ads</p>
-                        <h1 class="text-8xl font-bold mb-4">Find Anything Around You.</h1>
-                        <h3 class="text-2xl font-semibold text-gray-600 mb-3">You Can Buy, Sell Anything You Can Think Of.</h3>
+    <div class="header-wrap   ">
+        <div class="xl:container   mx-auto p-2 ">
+            <div class="show-case flex justify-between sm:px-5 md:px-10 py-14">
+                <div
+                    class="left pl-5 sm:pl-12 lg:w-[60%] w-full p-3   bg-[url('/assets/images/background.png')] bg-no-repeat">
+                    <div class="content p-4 ">
+                        <p class="text-xl sm:text-2xl md:text-3xl  font-bold mb-3 text-red-700">Over 10,56,432 Active
+                            Ads</p>
+                        <h1 class="md:text-8xl sm:text-6xl text-5xl font-bold mb-4">Find Anything Around You.</h1>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-gray-600 mb-3">You Can Buy, Sell
+                            Anything You Can Think Of.</h3>
                     </div>
-                    <div class="form rounded-lg border-2 shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white p-4">
+                    <div class="form rounded-lg  shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-white p-4">
                         <form action="#">
-                            <input class="p-3 bg-gray-100 rounded-lg w-80" placeholder="Select Catagory" type="text">
-                            <input class="p-3 bg-gray-100 rounded-lg w-80" placeholder="Enter Address" type="text">
-                            <input class="bg-red-700 text-white text-xl font-bold py-3 px-8 rounded-lg" value="Search" type="submit">
+                            <div class="block sm:flex justify-between gap-2">
+                                <input class="p-3 py-4 mb-2 bg-gray-100 rounded-lg w-full "
+                                    placeholder="Select Catagory" type="text">
+                                <input class="p-3 py-4 mb-2 bg-gray-100 rounded-lg w-full " placeholder="Enter Address"
+                                    type="text">
+                            </div>
+                            <div class="flex lg:hidden justify-start">
+                                <input class="bg-red-700 mb-2 text-white text-xl font-bold py-3 px-8 rounded-lg"
+                                    value="Search" type="submit">
+                            </div>
                         </form>
                     </div>
                     <div class="catagory">
@@ -60,75 +84,88 @@
                         </div>
                     </div>
                 </div>
-                <div class="right relative border-2 border-blue-700 pr-2">
+                <div class="right hidden lg:block  pr-2">
                     <img src="/assets/images/showcase.png" alt="image">
-                    <div class="absolute -bottom-5 right-5">
+                    <div class="absolute -bottom-5 right-28">
                         <img src="/assets/images/price.png" alt="price">
                     </div>
                 </div>
             </div>
-            <div class="catagory-section border-2 border-black px-20 p-5">
-                <div class="head border-2 border-red-700 px-10 mb-4 p-2">
-                    <p class="text-xl font-bold mb-2 text-red-700">Search By Categories</p>
-                    <h2 class="text-4xl font-bold mb-3">Most Popular Categories</h2>
+            <div class="catagory-section  px-10 sm:px-20 p-5">
+                <div class="head flex flex-col items-center lg:items-start px-2 sm:px-10 mb-4 p-2">
+                    <p class="text-md sm:text-xl font-bold mb-2 text-red-700">Search By Categories</p>
+                    <h2 class="text-3xl sm:text-start text-center sm:text-4xl font-bold mb-3">Most Popular Categories
+                    </h2>
                 </div>
-                <div class="catagory-boxes mb-5 flex justify-center flex-wrap border-2 border-yellow-400 p-4">
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                <div class="catagory-boxes mb-5 flex justify-center flex-wrap px-2  sm:py-4-4">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/house.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Real Estate</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/car.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Vehicles</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/mobile.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Mobile Phones</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/furniture.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Furniture</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/eelectronics.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Electronics</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/jobs2.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Jobs</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/Fashion0.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Fashion</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/pet.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Animal</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/Travel.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Travel</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/Events.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Events</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/Health2.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Health</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
                     </div>
-                    <div class="box w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
+                    <div
+                        class="box w-full sm:w-48 cursor-pointer px-12 grid place-content-center py-8 mb-3 mx-2 rounded-lg shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px] hover:shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)]">
                         <img class=" mx-auto mb-1" src="/assets/images/Matrimonial.png" alt="house">
                         <p class="hover:text-red-700  py-1 font-semibold text-center">Matrimonial</p>
                         <p class="pb-1 text-red-700 font-semibold text-center">9 Ads</p>
@@ -138,34 +175,42 @@
         </div>
     </div>
 
-    <div class="featured-wrap border-2 border-black bg-gray-100">
-        <div class="container border-2 border-blue-800 mx-auto p-2">
-            <div class="featured-section border-2 border-black px-20 py-5">
-                <div class="head text-center border-2 border-red-700 px-10  p-2">
-                    <p class="text-xl font-bold mb-1 text-red-700">Check Out What's New</p>
-                    <h2 class="text-5xl font-bold mb-2">Featured Ads</h2>
+    <div class="featured-wrap bg-gray-100">
+        <div class="lg:container   mx-auto p-2">
+            <div class="featured-section  px-2 sm:px-20 py-5">
+                <div class="head  px-10  p-2">
+                    <p class=" text-lg sm:text-xl text-center font-bold mb-1 text-red-700">Check Out What's New</p>
+                    <h2 class="text-3xl sm:text-5xl text-center font-bold mb-2">Featured Ads</h2>
                 </div>
             </div>
-            <div class="featured-list flex flex-wrap justify-center gap-5 mb-5 border-2 border-yellow-500 p-2">
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+            <div class="featured-list flex flex-wrap justify-center gap-5 mb-5  -500 p-2">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -174,25 +219,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -201,25 +254,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -228,25 +289,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -255,25 +324,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -282,25 +359,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -309,25 +394,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -336,289 +429,33 @@
 
                     </div>
                 </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
                     </div>
                     <div class="description py-2 px-4 ">
                         <div class="name-title">
                             <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
                             <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
                             <p class="text-xm font-semibold text-gray-600">Pakistan</p>
                         </div>
                     </div>
                     <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
                         <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="location-wrap border-2 border-black">
-        <div class="container border-2 border-blue-800 mx-auto py-5 p-2">
-            <div class="location-section border-2 border-black px-20 py-5">
-                <div class="head text-center border-2 border-red-700 px-10  p-2">
-                    <p class="text-xl font-bold mb-1 text-red-700">Search By Locations</p>
-                    <h2 class="text-5xl font-bold mb-2">Popular Locations</h2>
-                </div>
-            </div>
-            <div class="location-list flex flex-wrap justify-center gap-5 mb-5 border-2 border-yellow-500 py-5 p-2">
-                <div class="country relative w-96 rounded-lg">
-                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
-                    <p class="absolute text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">USA</p>
-                    <a class="absolute text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700" href="#">31 Listings</a>
-                </div>
-                <div class="country relative w-96 rounded-lg">
-                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
-                    <p class="absolute text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">Canada</p>
-                    <a class="absolute text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700" href="#">31 Listings</a>
-                </div>
-                <div class="country relative w-96 rounded-lg">
-                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
-                    <p class="absolute text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">United Kingdom</p>
-                    <a class="absolute text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700" href="#">31 Listings</a>
-                </div>
-                <div class="country relative w-96 rounded-lg">
-                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
-                    <p class="absolute text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">France</p>
-                    <a class="absolute text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700" href="#">31 Listings</a>
-                </div>
-                <div class="country relative w-96 rounded-lg">
-                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
-                    <p class="absolute text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">India</p>
-                    <a class="absolute text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700" href="#">31 Listings</a>
-                </div>
-                <div class="country relative w-96 rounded-lg">
-                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
-                    <p class="absolute text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">Pakistan</p>
-                    <a class="absolute text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700" href="#">31 Listings</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popular-wrap border-2 border-black bg-gray-100">
-        <div class="container border-2 border-blue-800 mx-auto p-2">
-            <div class="popular-section border-2 border-black px-20 py-5">
-                <div class="head text-center border-2 border-red-700 px-10  p-2">
-                    <p class="text-xl font-bold mb-1 text-red-700">Check Out What's New</p>
-                    <h2 class="text-5xl font-bold mb-2">Popular Trending Ads</h2>
-                </div>
-            </div>
-            <div class="popular-list flex flex-wrap justify-center gap-5 mb-5 border-2 border-yellow-500 p-2">
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Èlectronics > Mobiles </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Èlectronics > Mobiles </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Jobs > Accounts </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Service > Cleaning </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Travel > Restaurent </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Èlectronics > Mobiles </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Travel > Tour Guide </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
-                        </div>
-                    </div>
-                    <div class="price flex justify-between items-center p-4">
-                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
-                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
-
-                    </div>
-                </div>
-                <div class="item mb-4 rounded-lg bg-white w-80 ">
-                    <div class="picture relative  ">
-                        <img class="rounded-lg" src="/assets/images/samsung.jpg" alt="img">
-                        <img class="rounded-full w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg" alt="p=man">
-                    </div>
-                    <div class="description py-2 px-4 ">
-                        <div class="name-title">
-                            <p class="text-gray-600 text-sm mb-2 font-semibold">Travel > Group Tour </p>
-                            <hr class="border border-gray-200 mb-1">
-                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U</h3>
-                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
-                        </div>
-                    </div>
-                    <div class="rating  border-y-2 flex justify-between items-center px-4">
-                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2">rating</span></p>
-                        <div class="flex gap-5">
-                            <p class="p-2">P</p>
-                            <p class="p-2">B</p>
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
                         </div>
                     </div>
                     <div class="price flex justify-between items-center p-4">
@@ -631,15 +468,369 @@
         </div>
     </div>
 
-    <div class="blogs-wrap border-2 border-black">
-        <div class="container border-2 border-blue-800 mx-auto py-5 p-2">
-            <div class="blogs-section border-2 border-black px-20 py-5">
-                <div class="head text-center border-2 border-red-700 px-10  p-2">
-                    <p class="text-xl font-bold mb-1 text-red-700">The Latest News</p>
-                    <h2 class="text-5xl font-bold mb-2">Read Our Recent Articles</h2>
+    <div class="location-wrap  ">
+        <div class="lg:container   mx-auto py-5 p-2">
+            <div class="location-section px-2  sm:px-20 py-5">
+                <div class="head px-10  p-2">
+                    <p class="text-lg sm:text-xl text-center font-bold mb-1 text-red-700">Search By Locations</p>
+                    <h2 class="text-3xl sm:text-5xl text-center font-bold mb-2">Popular Locations</h2>
                 </div>
             </div>
-            <div class="blogs-list flex flex-wrap justify-center gap-5 mb-5 border-2 border-yellow-500 py-5 p-2">
+            <div class="location-list flex flex-wrap justify-center gap-5 mb-5  py-5 p-2">
+                <div
+                    class="country relative w-96 rounded-lg after:absolute after:content-[''] after:rounded-lg after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:opacity-20">
+                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
+                    <p class="absolute z-10 text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">
+                        USA</p>
+                    <a class="absolute z-10 text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700"
+                        href="#">31 Listings</a>
+                </div>
+                <div
+                    class="country relative w-96 rounded-lg after:absolute after:content-[''] after:rounded-lg after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:opacity-20">
+                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
+                    <p class="absolute z-10 text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">
+                        Canada</p>
+                    <a class="absolute z-10 text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700"
+                        href="#">31 Listings</a>
+                </div>
+                <div
+                    class="country relative w-96 rounded-lg  after:absolute after:content-[''] after:rounded-lg after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:opacity-20">
+                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
+                    <p class="absolute z-10 text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">
+                        United Kingdom</p>
+                    <a class="absolute z-10 text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700"
+                        href="#">31 Listings</a>
+                </div>
+                <div
+                    class="country relative w-96 rounded-lg after:absolute after:content-[''] after:rounded-lg after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:opacity-20">
+                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
+                    <p class="absolute z-10 text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">
+                        France</p>
+                    <a class="absolute z-10 text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700"
+                        href="#">31 Listings</a>
+                </div>
+                <div
+                    class="country relative w-96 rounded-lg after:absolute after:content-[''] after:rounded-lg after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:opacity-20">
+                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
+                    <p class="absolute z-10 text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">
+                        India</p>
+                    <a class="absolute z-10 text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700"
+                        href="#">31 Listings</a>
+                </div>
+                <div
+                    class="country relative w-96 rounded-lg after:absolute after:content-[''] after:rounded-lg after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:opacity-20">
+                    <img class="rounded-lg" src="/assets/images/USA-Tag.png" alt="">
+                    <p class="absolute z-10 text-2xl font-bold text-white bottom-16 left-0 right-0 flex justify-center">
+                        Pakistan</p>
+                    <a class="absolute z-10 text-sm left-[38%] bottom-5 flex justify-center text-white font-bold py-2 px-4 rounded-lg bg-red-700"
+                        href="#">31 Listings</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popular-wrap   bg-gray-100">
+        <div class="lg:container   mx-auto p-2">
+            <div class="popular-section  px-2 sm:px-20 py-5">
+                <div class="head  px-10  p-2">
+                    <p class="text-lg sm:text-xl text-center font-bold mb-1 text-red-700">Check Out What's New</p>
+                    <h2 class="text-3xl sm:text-5xl text-center font-bold mb-2">Popular Trending Ads</h2>
+                </div>
+            </div>
+            <div class="popular-list flex flex-wrap justify-center gap-5 mb-5  -500 p-2">
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+                <div class="item mb-4 rounded-lg bg-white w-80 xs:w-60 sm:w-72 md:w-80 ">
+                    <div class="div relative">
+                        <div class="picture relative overflow-hidden">
+                            <img class="rounded-lg hover:scale-110 duration-1000 ease-in-out"
+                                src="/assets/images/samsung.jpg" alt="img">
+                            <span class="absolute top-1 right-1 text-xs font-bold bg-yellow-300 p-2">FEATURED</span>
+                        </div>
+                        <img class="rounded-full z-10 w-14 absolute -bottom-6 right-5" src="/assets/images/person.jpg"
+                            alt="p=man">
+                    </div>
+                    <div class="description py-2 px-4 ">
+                        <div class="name-title">
+                            <p class="text-gray-600 text-sm mb-2 font-semibold">Mobiles Phones</p>
+                            <hr class="border border-gray-200 mb-1">
+                            <h3 class="text-lg font-bold mb-1">Samsung Galaxy S22 U <span
+                                    class="text-xs ml-4 icon-checkmark"></span></h3>
+                            <p class="text-xm font-semibold text-gray-600">Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="rating  border-y-2 flex justify-between items-center px-4">
+                        <p class="font-semibold">5.0 <span class="text-yellow-500  mx-2"><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span><span class="icon-star-full"></span><span
+                                    class="icon-star-full"></span></span></p>
+                        <div class="flex gap-5">
+                            <p class="p-2"><span class="icon-mobile"></span></p>
+                            <p class="p-2"><span class="icon-heart"></span></p>
+                        </div>
+                    </div>
+                    <div class="price flex justify-between items-center p-4">
+                        <p class="text-lg font-bold">$600 <span>Fixed</span></p>
+                        <p class="text-sm font-semibold text-gray-600">Views: 7730</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blogs-wrap  ">
+        <div class="lg:container   mx-auto py-5 p-2">
+            <div class="blogs-section px-2 sm:px-20 py-5">
+                <div class="head text-center   px-10  p-2">
+                    <p class="text-lg sm:text-xl font-bold mb-1 text-red-700">The Latest News</p>
+                    <h2 class="text-3xl sm:text-5xl font-bold mb-2">Read Our Recent Articles</h2>
+                </div>
+            </div>
+            <div class="blogs-list flex flex-wrap justify-center gap-5 mb-5  -500 py-5 p-2">
                 <div class="blogs w-96">
                     <div class="blog relative rounded-lg">
                         <img class="rounded-lg" src="/assets/images/blog1.jpg" alt="">
@@ -649,7 +840,7 @@
                         </div>
                     </div>
                     <div class="blog-info py-3">
-                        <a class="text-sm text-red-700 border border-red-700 p-1 px-3 bg-gray-200 rounded " href="#">NEWS</a>
+                        <a class="text-sm text-red-700 border  p-1 px-3 bg-gray-200 rounded " href="#">NEWS</a>
                         <p class="text-2xl font-bold py-4">Learn Online Businesses with James</p>
                     </div>
                 </div>
@@ -662,7 +853,7 @@
                         </div>
                     </div>
                     <div class="blog-info py-3">
-                        <a class="text-sm text-red-700 border border-red-700 p-1 px-3 bg-gray-200 rounded " href="#">NEWS</a>
+                        <a class="text-sm text-red-700 border  p-1 px-3 bg-gray-200 rounded " href="#">NEWS</a>
                         <p class="text-2xl font-bold py-4">Learn Online Businesses with James</p>
                     </div>
                 </div>
@@ -675,7 +866,7 @@
                         </div>
                     </div>
                     <div class="blog-info py-3">
-                        <a class="text-sm text-red-700 border border-red-700 p-1 px-3 bg-gray-200 rounded " href="#">NEWS</a>
+                        <a class="text-sm text-red-700 border  p-1 px-3 bg-gray-200 rounded " href="#">NEWS</a>
                         <p class="text-2xl font-bold py-4">Learn Online Businesses with James</p>
                     </div>
                 </div>
@@ -683,70 +874,71 @@
         </div>
     </div>
 
-    <div class="footer-wrap bg-black text-white border-2 border-yellow-300">
-        <div class="container p-2 border-2 border-red-600 mx-auto py-5">
-            <div class="top-portion flex justify-center gap-20 border-2 border-t-yellow-300 p-2">
-                <div class="footer-logo border-2 border-t-yellow-300 py-5 p-2">
+    <div class="footer-wrap bg-black text-white ">
+        <div class="xl:container px-2 sm:px-20 mx-auto py-5">
+            <div class="top-portion lg:flex gap-5 justify-between p-2">
+                <div class="footer-logo w-full  py-5 p-2">
                     <img class="mb-5" src="/assets/images/footer-logo.png" alt="logo">
-                    <p class="font-semibold text-gray-300">The ClassiAds is all time #1 Premium Classified Ads WordPress Theme on Themeforest.</p>
+                    <p class="font-semibold text-gray-400">The ClassiAds is all time #1 Premium Classified Ads WordPress
+                        Theme on Themeforest.</p>
                 </div>
-                <div class="form border-2 border-t-yellow-300 py-5 p-2">
-                    <p class="text-2xl font-semibold mb-5">Subscribe To Our Newsletter!</p>
-                    <div class="form border rounded-lg p-1">
-                        <input class="py-4 px-4 rounded-lg w-96 bg-gray-900 mr-1" type="text" placeholder="Enter Email Address">
+                <div class="form  w-full py-5 p-2">
+                    <p class="text-2xl px-2 font-semibold mb-5">Subscribe To Our Newsletter!</p>
+                    <div class="form rounded-lg p-1">
+                        <input class="mb-5 py-4 px-4 rounded-lg w-full sm:w-96 bg-gray-900 mr-1" type="text"
+                            placeholder="Enter Email Address">
                         <a class="bg-red-700 text-white rounded-lg py-4 px-8 font-bold " href="#">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="services-footer flex justify-center gap-14 border-2 border-white py-5 p-2">
-                <div class="about-app border border-yellow-400">
-                    <h2 class="py-4 border-b border-gray-600 mb-6 text-2xl font-bold ">Get Our App</h2>
-                    <p class="font-semibold text-gray-300 mb-2">Download The App And Go To Travel The World!</p>
-                    <div class="number py-4 flex gap-5 bg-gray-900 rounded-lg mt-5 px-6">
-                        <div class="icon text-4xl font-bold">
-                            P
-                        </div>
-                        <div class="phone px-2">
-                            <p class="font-semibold">PHONE</p>
-                            <p class="text-xl font-bold ">00 888 123 4444</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="information border border-yellow-400 px-3">
+            <div class="services-footer flex  gap-5 flex-wrap lg:flex-nowrap justify-between py-5 p-2">
+                <div class="information lg:w-80 px-3">
                     <h2 class="py-4 border-b border-gray-600 mb-6 text-2xl font-bold ">Explore</h2>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">My Dashboard</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Submit-Listing</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Login</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Register</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Our News</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Contact US</p>
                 </div>
-                <div class="information border border-yellow-400 px-3">
+                <div class="information lg:w-80 px-3">
                     <h2 class="py-4 border-b border-gray-600 mb-6 text-2xl font-bold ">Top Categories</h2>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Real-Esatate</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Mobile Phones</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Electronics</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Vehicles</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Pets</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Animals</p>
                 </div>
-                <div class="information border border-yellow-400 px-3">
+                <div class="information lg:w-80 px-3">
                     <h2 class="py-4 border-b border-gray-600 mb-6 text-2xl font-bold ">Top Locations</h2>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">United State</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Canada</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Pakistan</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">India</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">United Kingdom</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Australia</p>
                 </div>
-                <div class="information border border-yellow-400 px-3">
+                <div class="information lg:w-80 px-3">
                     <h2 class="py-4 border-b border-gray-600 mb-6 text-2xl font-bold ">Important Links</h2>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">Submit-Listing</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
-                    <p class="font-semibold text-gray-300 mb-3">My Dashboard</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Help Desk</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">About</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Refund & Return Policy
+                    </p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Term of Services</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Site Map</p>
+                    <p class="font-semibold text-gray-400 cursor-pointer hover:text-white mb-3">Posting Policy</p>
+                </div>
+            </div>
+            <div class="main-footer flex flex-wrap gap-5 justify-between items-center  py-5 px-5">
+                <div class="text ">
+                    <p class="text-gray-400 font-semibold">© Copyright 2022 by Designinvento.net</p>
+                </div>
+                <div class="social-icons flex justify-between gap-3">
+                    <a href="#" class="py-4 px-6 bg-gray-900  rounded-full"><span class="icon-facebook"></span></a>
+                    <a href="#" class="py-4 px-6 bg-gray-900  rounded-full"><span class="icon-twitter"></span></a>
+                    <a href="#" class="py-4 px-6 bg-gray-900  rounded-full"><span class="icon-wordpress"></span></a>
+                    <a href="#" class="py-4 px-6 bg-gray-900  rounded-full"><span class="icon-github"></span></a>
                 </div>
             </div>
         </div>
@@ -754,4 +946,5 @@
 
 
 </body>
+
 </html>
